@@ -18,33 +18,38 @@ module.exports = {
       {
         light: {
           ...require("daisyui/src/theming/themes")["[data-theme=light]"],
-          ".btn-color-gray":{
-            "background-color":"#D9D9D9"
+          ".btn-color-gray": {
+            "background-color": "#D9D9D9",
           },
           ".text-title": {
-            "color": "#000000",
-            "fill": "#000000",
-            
+            color: "#000000",
+            fill: "#000000",
           },
           ".btn-twitter:hover": {
             "background-color": "#1C96E1",
             "border-color": "#1C96E1",
+          },
+          ".outline-color": {
+            "outline-color": "black",
           },
         },
       },
       {
         dark: {
           ...require("daisyui/src/theming/themes")["[data-theme=dark]"],
-          ".btn-color-gray":{
-            "background-color":"#383636"
+          ".btn-color-gray": {
+            "background-color": "#383636",
           },
           ".text-title": {
-            "color": "#FAF9F9",
-            "fill": "#FAF9F9",
+            color: "#FAF9F9",
+            fill: "#FAF9F9",
           },
           ".btn-twitter:hover": {
             "background-color": "#1C96E1",
             "border-color": "#1C96E1",
+          },
+          ".outline-color": {
+            "outline-color": "#FAF9F9",
           },
         },
       },

@@ -1,20 +1,16 @@
-import React, { useState } from "react";
-import FormTodo from "../Form/FormTodo";
+import React from "react";
+
 interface Props {
-  todo: string;
-  setTodo: React.Dispatch<React.SetStateAction<string>>;
+  handleOpenForm: () => void;
 }
 
-const ButtonAddTodo: React.FC<Props> = ({ todo, setTodo}) => {
-   // Button
-   const [Forms, setForms] = useState<boolean>(false);
-
+const ButtonAddTodo: React.FC<Props> = ({ handleOpenForm }) => {
   return (
     <div>
       <div className="mt-6 text-center">
         <button
           className="btn w-48 h-[20px] btn-color-gray text-title px-5 normal-case text-base"
-          onClick={() => setForms(true)}
+          onClick={handleOpenForm}
         >
           Click Add...
           <svg
@@ -33,14 +29,7 @@ const ButtonAddTodo: React.FC<Props> = ({ todo, setTodo}) => {
           </svg>
         </button>
       </div>
-      <div>
-        <FormTodo
-          todo={todo}
-          setTodo={setTodo}
-          Forms={Forms}
-          setForms={setForms}
-        />
-      </div>
+      <div></div>
     </div>
   );
 };

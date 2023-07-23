@@ -1,12 +1,11 @@
 import gambar from "../../image/download.jpeg";
 import ThemeSwitcher from "../Button/ThemeSwitcher";
 
-
-const Navbar= () => {
+const Navbar = () => {
   return (
     <div className="navbar w-screen sticky inset-x-0 top-0 z-10 py-5">
       <div className="flex-none w-14 h-14">
-        <a  className="btn btn-ghost normal-case rounded-full">
+        <a className="btn btn-ghost normal-case rounded-full">
           <img src={gambar} className="w-10 h-10 rounded-full" alt="" />
         </a>
       </div>
